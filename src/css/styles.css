@@ -27,3 +27,72 @@ img {
   --fs-heading: 32px;
   --fs-body: 16px;
 }
+
+body {
+  margin: 0;
+}
+
+.header {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: blue;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a.contact {
+  color: black;
+  background-color: white;
+  width: 160px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header img {
+  margin-left: 240px;
+  background-color: blue;
+}
+
+.nav a:first-child {
+  margin-left: 603px ;
+  position: relative;
+}
+
+.nav a:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  transform: translateX(50%)
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: blue;
+  overflow: hidden;
+}
+
+section img:first-child,
+section img:last-child {
+  margin-top: 120px;
+}
