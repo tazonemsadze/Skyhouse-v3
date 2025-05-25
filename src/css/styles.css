@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
 ul {
   list-style: none;
@@ -30,6 +30,7 @@ img {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 .header {
@@ -84,7 +85,7 @@ body {
   transform: translateX(50%)
 }
 
-section {
+main {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -92,7 +93,20 @@ section {
   overflow: hidden;
 }
 
-section img:first-child,
-section img:last-child {
+main img:first-child,
+main img:last-child {
   margin-top: 120px;
+}
+
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('src/images/hero-sec-2.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1;
 }
