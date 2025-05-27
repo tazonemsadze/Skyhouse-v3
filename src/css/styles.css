@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
 ul {
   list-style: none;
@@ -243,4 +243,74 @@ form button {
   background-color: #ffffff;
   font-weight: bold;
   border: none;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.header {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: blue;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a.contact {
+  color: black;
+  background-color: white;
+  width: 160px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header img {
+  margin-left: 240px;
+  background-color: blue;
+}
+
+.nav a:first-child {
+  margin-left: 603px ;
+  position: relative;
+}
+
+.nav a:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  transform: translateX(50%)
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: blue;
+  overflow: hidden;
+}
+
+main img:first-child,
+main img:last-child {
+  margin-top: 120px;
 }
